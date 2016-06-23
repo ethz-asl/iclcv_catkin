@@ -15,7 +15,7 @@ endif()
 ExternalProject_Add(iclcv_src
                     GIT_REPOSITORY https://github.com/ethz-asl/iclcv
                     UPDATE_COMMAND ""
-                  CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CATKIN_DEVEL_PREFIX} ${QT5_ROOT} -DBUILD_WITH_QT=ON -DBUILD_WITH_OPENGL=ON -DINSTALL_PATH_PREFIX= -DCMAKE_BUILD_TYPE:STRING=Release)
+                  CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CATKIN_DEVEL_PREFIX} ${QT5_ROOT} -DBUILD_WITH_QT=ON -DBUILD_WITH_OPENGL=ON -DBUILD_WITH_OPENCV=ON -DINSTALL_PATH_PREFIX= -DCMAKE_BUILD_TYPE:STRING=Release)
 
 cs_add_library(${PROJECT_NAME} src/dependency_tracker.cc)
 add_dependencies(${PROJECT_NAME} iclcv_src)
