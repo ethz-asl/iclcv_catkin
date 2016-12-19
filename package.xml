@@ -1,4 +1,4 @@
-<package>
+<package format="2">
   <name>iclcv_catkin</name>
   <version>9.12.0</version>
   <description>iclcv_catkin</description>
@@ -9,4 +9,5 @@
   <buildtool_depend>catkin</buildtool_depend>
   <buildtool_depend>catkin_simple</buildtool_depend>
 
+  <depend>opencv3_catkin</depend>
 </package>
