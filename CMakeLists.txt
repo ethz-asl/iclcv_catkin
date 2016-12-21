@@ -35,7 +35,6 @@ cs_add_library(${PROJECT_NAME} src/dependency_tracker.cc)
 
 add_dependencies(${PROJECT_NAME} iclcv_src)
 include_directories(${ICLCV_CATKIN_INCLUDE})
-target_link_libraries(${PROJECT_NAME} ${CATKIN_DEVEL_PREFIX}/lib/libICLCV${CMAKE_SHARED_LIBRARY_SUFFIX})
 cs_install()
 
 cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include
